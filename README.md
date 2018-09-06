@@ -93,5 +93,5 @@ kubectl create deployment hello -n pycon --image=gcr.io/cloudkite-dev/six-ways
 
 Expose to public
 ```
-kubectl expose deployment hello --namespace pycon --type=LoadBalancer --name=hello --port=80
+kubectl expose deployment hello --namespace pycon --type=LoadBalancer --name=hello --port=80 --target-port=5000
 ```
